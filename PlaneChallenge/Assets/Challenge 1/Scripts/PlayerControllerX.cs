@@ -7,7 +7,7 @@ public class PlayerControllerX : MonoBehaviour
     private float speed = 0.5f;
     public float rotationSpeed = 40.0f;
     public float verticalInput;
-    public float horizontalInput;
+    
 
 
     // Start is called before the first frame update
@@ -19,7 +19,7 @@ public class PlayerControllerX : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        horizontalInput = Input.GetAxis("Horizontal");
+        
 
         // get the user's vertical input
        verticalInput = Input.GetAxis("Vertical");
