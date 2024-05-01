@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FollowPlayerX : MonoBehaviour
 {
-    public GameObject plane;
+    public GameObject player;
     private Vector3 offset = new Vector3(0, 0, 0);
 
     // Start is called before the first frame update
@@ -16,6 +16,6 @@ public class FollowPlayerX : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        transform.position = plane.transform.position + offset;
+        transform.position = player.transform.position + offset;
     }
 }
